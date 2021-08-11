@@ -31,7 +31,7 @@ int main()
   bool flag = 0;
  
  while(start<=end)  {
-	 mid = start + (start-end)/2;
+	 mid = start + (end-start)/2;
    	if(arr[mid]==k)
    	  {
    	      cout<<"your element is present in the array";
