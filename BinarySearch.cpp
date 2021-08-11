@@ -27,10 +27,11 @@ int main()
 			  }
 		}
   //after sorting 
-  int mid= (0+n)/2,start=0,end=n-1;
+  int mid,start=0,end=n-1;
   bool flag = 0;
  
  while(start<=end)  {
+	 mid = start + (start-end)/2;
    	if(arr[mid]==k)
    	  {
    	      cout<<"your element is present in the array";
@@ -41,7 +42,7 @@ int main()
 	    	end = mid -1;
 	  else
 			start = mid + 1;
-		mid = (start+end)/2;	 
+	//	mid = (start+end)/2;	 
    }
    if(flag== 0)
       cout<<"your element is not present in the array";
