@@ -17,7 +17,7 @@ int main()
 	    {
 	    	for(int j=0;j<n;j++)
 	    	  {
-	    	  	if(arr[j]<arr[i])
+	    	  	if(arr[j]>arr[i])
 				  	{
 				  	int temp;
 					 temp = arr[i];
